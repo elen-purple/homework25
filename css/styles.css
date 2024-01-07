@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes {
+  width: 400px;
+  height: 400px;
+  /* outline: dashed red 3px; */
+  position: relative;
+}
+
+.box {
+  width: 175px;
+  height: 175px;
+}
+
+.box.red {
+  background-color: LightCoral;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box.blue {
+  background-color: MediumSlateBlue;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box.green {
+  background-color: MediumSpringGreen;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
